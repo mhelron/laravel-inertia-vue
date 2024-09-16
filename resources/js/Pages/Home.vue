@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <Head title="| Home"/>
+    <Head :title="` | ${$page.component}`"/>
     <div>
-        <h1>This is the home page</h1>
+        <h1>This is the home page, {{ $page.props.auth.user }}</h1>
     </div>
 </template>
